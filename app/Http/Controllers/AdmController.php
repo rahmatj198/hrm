@@ -19,8 +19,8 @@ class AdmController extends Controller
         
         // include_once("phpgrid\config.php"); 
         //include('phpgrid\jqgrid_dist.php');
-        include_once(app_path() . "\Http\Controllers\phpgrid\config.php");
-        include(app_path() . "\Http\Controllers\phpgrid\jqgrid_dist.php");
+        include_once(app_path() . "/Http/Controllers/phpgrid/config.php");
+        include(app_path() . "/Http/Controllers/phpgrid/jqgrid_dist.php");
 
         $g = new \jqgrid();
         $g->table = "users";
