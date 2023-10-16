@@ -16,7 +16,8 @@ class ColHelper {
 		$col["name"] = "email";
 		$col["title"] = "Username";
 		$col["editable"] = true;
-		$col["editrules"] = array("required"=>true, "readonly"=>true, "email"=>true);
+		//$col["editrules"] = array("required"=>true, "readonly"=>true, "email"=>true);
+		$col["editrules"] = array("required"=>true, "readonly"=>true);
 		$col["show"] = array("list"=>true, "add"=>true, "edit"=>true, "view"=>true, "bulkedit"=>false);		
 		$cols[] = $col;
 
