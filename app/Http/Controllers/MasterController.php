@@ -16,8 +16,8 @@ class MasterController extends Controller
         $mtabid = Menu::find($mid);
         $menuid = $mtabid ? $mtabid->id : 0;  
         
-        include_once("phpgrid\config.php");
-        include('phpgrid\jqgrid_dist.php');
+        include_once(app_path() . "/Http/Controllers/phpgrid/config.php");
+        include(app_path() . "/Http/Controllers/phpgrid/jqgrid_dist.php");
 
         $g = new \jqgrid();
         $g->table = "mst_customers";
@@ -74,8 +74,8 @@ class MasterController extends Controller
         $mtabid = Menu::find($mid);
         $menuid = $mtabid ? $mtabid->id : 0;  
         
-        include_once("phpgrid\config.php");
-        include('phpgrid\jqgrid_dist.php');
+        include_once(app_path() . "/Http/Controllers/phpgrid/config.php");
+        include(app_path() . "/Http/Controllers/phpgrid/jqgrid_dist.php");
 
         $g = new \jqgrid();
         $g->table = "mst_products";

@@ -22,8 +22,8 @@ class TransactionController extends Controller
 		$ddata['list_employee'] = Helper::getDropdown('mst_employees', "id", "last_name");
 		$ddata['list_shipper'] = Helper::getDropdown('mst_shippers', "id", "company_name");	
         
-        include_once("phpgrid\config.php");
-        include('phpgrid\jqgrid_dist.php');
+        include_once(app_path() . "/Http/Controllers/phpgrid/config.php");
+        include(app_path() . "/Http/Controllers/phpgrid/jqgrid_dist.php");
 
         $g = new \jqgrid();
         $g->table = "tr_orders";
@@ -174,8 +174,8 @@ class TransactionController extends Controller
         $mtabid = Menu::find($mid);
         $menuid = $mtabid ? $mtabid->id : 0;  
         
-        include_once("phpgrid\config.php");
-        include('phpgrid\jqgrid_dist.php');
+        include_once(app_path() . "/Http/Controllers/phpgrid/config.php");
+        include(app_path() . "/Http/Controllers/phpgrid/jqgrid_dist.php");
 
         $g = new \jqgrid();
         $g->table = "tr_orders";
